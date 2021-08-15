@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css, keyframes } from 'styled-components';
-import { setColor } from '../../styles';
+import { setColor, setRem, setLetterSpacing } from '../../styles';
 
 const Banner = ({ className, title, text, children, greeting }) => {
   return (
@@ -19,15 +19,12 @@ const Banner = ({ className, title, text, children, greeting }) => {
 const BannerWrapper = styled(Banner)`
   background: rgba(0, 0, 0, 0.7);
   text-align: center;
-  padding: 60px 32px;
-  /* setRem */
-  letter-spacing: 3px;
-  /* setLetterSpacing */
+  padding: ${setRem(60)} ${setRem(32)};
+  ${setLetterSpacing(3)};
   color: ${setColor.mainWhite};
   h1 {
     text-transform: capitalize;
-    font-size: 48px;
-    /* setRem */
+    font-size: ${setRem(48)};
     color: ${setColor.primaryColor};
     span {
       color: ${setColor.mainWhite};
