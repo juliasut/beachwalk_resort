@@ -26,4 +26,7 @@ export const PrimaryBtn = styled.button`
   text-decoration: none;
   ${(props) =>
     `margin: ${props.t || 0} ${props.r || 0} ${props.b || 0} ${props.l || 0}`};
+  
+  cursor: pointer;
 `;
+
