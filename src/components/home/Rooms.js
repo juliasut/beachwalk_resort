@@ -27,19 +27,27 @@ export default class Rooms extends Component {
 const RoomsCenter = styled.div`
   width: 90vw;
   margin: 0 auto;
+  ${media.large`
+  width: 100vw;
+  max-width: 1170px;
+  `};
+  /*
+  cards with min width of 360px and two gaps of 45px will make 3 columns for a 1170px screen
+  1170(max-width) - 90 = 1080;
+  45px * 2 gaps = 90; 
+  360px * 3 = 1080;
+  */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-column-gap: ${setRem(45)};
 
-  ${media.tablet`
+  /* ${media.tablet`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: ${setRem(32)};
   `}
 
   ${media.large`
-  width: 100vw;
-  max-width: 1170px;
-  `}
-
-  ${media.large`
   grid-template-columns: repeat(3, 1fr);
-  `}
+  `} */
 `;
