@@ -8,6 +8,22 @@ import {
   media,
 } from '../../styles';
 
+
+const animation = keyframes`
+0%{
+  opacity: 0;
+  transform: translateY(100%)
+}
+50%{
+  opacity: 0.5;
+  transform: translateY(-10%)
+}
+100%{
+  opacity: 1;
+  transform: translateY(0%)
+}
+`
+
 const Banner = ({ className, title, text, children, greeting }) => {
   return (
     <div className={className}>
@@ -45,7 +61,13 @@ const BannerWrapper = styled(Banner)`
     ${setBorder({ width: '6px', color: setColor.primaryColor })};
     p {
       width: 75%;
-    }`}/* .info */
+    }`}
+
+    h1{
+      animation: ${animation} 3s ease-in-out
+    }
+
+
 `;
 
 export default BannerWrapper;
