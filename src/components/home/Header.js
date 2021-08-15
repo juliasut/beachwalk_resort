@@ -14,6 +14,7 @@ export const Header = () => {
         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ad voluptatem suscipit obcaecati eaque, reiciendis accusantium? Mollitia, assumenda tempora!"
       >
       <PrimaryBtn t="1rem">view details</PrimaryBtn>
+      {/* <PrimaryBtn l="1rem" as="a" href="https://www.google.com">link to somewhere</PrimaryBtn> */}
       </Banner>
     </Hero>
   );
