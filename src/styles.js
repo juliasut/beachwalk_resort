@@ -31,3 +31,7 @@ export const setRem = (num = 16) => {
 export const setLetterSpacing = (num = 2) => {
   return `letter-spacing: ${num}px`;
 }
+
+export const setBorder = ({width="2px", style="solid", color="black"} = {}) => {
+  return `border: ${width} ${style} ${color}`;
+}

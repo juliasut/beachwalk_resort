@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css, keyframes } from 'styled-components';
-import { setColor, setRem, setLetterSpacing } from '../../styles';
+import { setColor, setRem, setLetterSpacing, setBorder } from '../../styles';
 
 const Banner = ({ className, title, text, children, greeting }) => {
   return (
@@ -37,7 +37,7 @@ const BannerWrapper = styled(Banner)`
 
   @media (min-width: 768px) {
     width: 70vw;
-    border: 6px solid ${setColor.primaryColor};
+    ${setBorder({width: "6px", color: setColor.primaryColor })};
     p {
       width: 75%;
     }
