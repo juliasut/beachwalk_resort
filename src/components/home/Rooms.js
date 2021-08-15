@@ -34,7 +34,7 @@ const RoomsCenter = styled.div`
   grid-column-gap: ${setRem(32)};
   `}
 
-  ${media.desktop`
+  ${media.large`
   width: 100vw;
   max-width: 1170px;
   `}

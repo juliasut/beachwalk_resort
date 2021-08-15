@@ -54,7 +54,7 @@ const AboutCenter = styled.div`
   width: 90vw;
   margin: 0 auto;
 
-  ${media.desktop`
+  ${media.large`
     width: 100vw;
     max-width: 1170px;
     .about-img,
