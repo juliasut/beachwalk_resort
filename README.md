@@ -1,3 +1,12 @@
+# React Styled Components Project
+
+Learning objectives:
+- use styled components to make css reusable
+- leverage JS in styled components to improve workflow
+
+## Final Project
+![beachwalk_resort gif]()
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
