@@ -5,7 +5,7 @@ Learning objectives:
 - leverage JS in styled components to improve workflow
 
 ## Final Project
-![beachwalk_resort gif]()
+![beachwalk_resort gif](https://github.com/juliasut/beachwalk_resort/blob/main/src/images/beachwalk1.gif)
 
 # Getting Started with Create React App
 
